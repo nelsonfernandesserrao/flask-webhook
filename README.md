@@ -31,4 +31,4 @@ On your VPS, either the port selected above needs to be directly exposed via you
 
 ## Private repositories
 
-Private repositories will require slightly different instructions with regard to pulling the repository. 
+To use private repositories, see the instructions in PrivateRepo.md
