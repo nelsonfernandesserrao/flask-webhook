@@ -1,0 +1,16 @@
+[Unit]
+Description=GitHub Webhook Receiver, Flask app
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/
+ExecStart=/usr/bin/python3 /home/ubuntu/webhook_receiver.py
+Restart=always
+RestartSec=5
+Environment=FLASK_ENV=production
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

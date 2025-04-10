@@ -29,6 +29,8 @@ For additional security, specify a GitHub secret - which must then be added to t
 
 On your VPS, either the port selected above needs to be directly exposed via your domain or IP - or a reverse proxy, like Nginx can be used. 
 
+Instructions to set up a systemd service to auto-restart the webhook-receiver: [ServiceInstructions](specific-instructions/ServiceInstructions.md)
+
 ## Private repositories
 
-To use private repositories, see the instructions in [PrivateRepo.md](PrivateRepo.md)
+To use private repositories, see the instructions in [PrivateRepo.md](specific-instructions/PrivateRepo.md)
