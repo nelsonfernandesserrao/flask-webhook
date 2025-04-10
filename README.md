@@ -19,11 +19,11 @@ For the payload URL, enter ```http://<VPS-ID>:<PORT-NUMBER>/payload```
 
 e.g. ```http://123.123.123.123:5432/payload```
 
-For content type, select 'application/json'
+For content type, select ```application/json```
 
-For events, select 'just the push event'
+For events, select ```just the push event```
 
-For additional security, specify a GitHub secret - which must then be added to the .env file
+For additional security, specify a GitHub secret - which must then be added to the .env file as per the template.
 
 ## VPS
 
