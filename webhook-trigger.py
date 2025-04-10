@@ -12,6 +12,7 @@ logging.basicConfig(level=logging.INFO, filename='webhook.log')
 
 
 def verify_signature(payload, header_signature):
+    # Validating GitHub webhooks follow the format and structure avaliable here: https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries
     if not header_signature:
         return False
     mac = hmac.new(GITHUB_SECRET, msg=payload, digestmod=hashlib.sha256)
