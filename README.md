@@ -1,6 +1,10 @@
-# Flask Webhook
+<h1 align="center">Flask Webhook</h1>
 
-A lightweight app to automatically deploy a GitHub repository to a VPS. 
+<p align="center">A lightweight app to automatically deploy a GitHub repository to a VPS.</p>
+<p align="center">
+<img alt="GitHub Pipenv locked Python version" src="https://img.shields.io/github/pipenv/locked/python-version/nelsonfernandesserrao/flask-webhook"> 
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
 
 ## Usage
 
