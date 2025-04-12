@@ -1,0 +1,39 @@
+repos:
+# Security checks, using Bandit.
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.8.2
+    hooks:
+      - id: bandit
+
+# Basic file hygiene, and JSON formatting.
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: pretty-format-json
+        args:
+          - "--autofix"
+
+# Code formatting, using Black
+  - repo: https://github.com/ambv/black
+    rev: 24.10.0
+    hooks:
+      - id: black
+        args:
+          - --line-length=88
+          - --include='\.pyi?$'
+        language_version: python3.12
+
+# Static type checking, using mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.14.1
+    hooks:
+      - id: mypy
+
+# Linting, using ruff - automatically fixing
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.3
+    hooks:
+      - id: ruff
+        args:
+          - --fix
